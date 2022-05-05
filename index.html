@@ -78,7 +78,7 @@
   </section>
 <!-- start section Graphic Design -->
   <section >
-    <div class="container graphic-design" id="serv2">
+    <div class="container graphic-design animate__animated" id="serv2">
       <div>
         <h1>Graphic Design</h1>
         <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -106,13 +106,8 @@
   </section>
 
 <!-- start section Video Services -->
-<<<<<<< HEAD
 <section id="video-services">
   <div class="container graphic-design animate__animated" id="serv2">
-=======
-<section>
-  <div class="container graphic-design" id="serv2">
->>>>>>> 05b8aac5b83a618b64092d5096096d260ca7a513
     <div>
       <h1>Video Services</h1>
       <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -137,13 +132,8 @@
   
 </section>
 <!-- start section Website &amp; Apps -->
-<<<<<<< HEAD
 <section id="website">
   <div class="container graphic-design animate__animated" id="serv2" >
-=======
-<section>
-  <div class="container graphic-design" id="serv2" >
->>>>>>> 05b8aac5b83a618b64092d5096096d260ca7a513
     <div>
       <h1>Website &amp; Apps</h1>
       <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -172,13 +162,8 @@
   
 </section>
 <!-- start section Website &amp; Apps -->
-<<<<<<< HEAD
 <section id="digital">
   <div class="container graphic-design animate__animated" id="serv2" >
-=======
-<section>
-  <div class="container graphic-design" id="serv2" >
->>>>>>> 05b8aac5b83a618b64092d5096096d260ca7a513
     <div>
       <h1>Digital Marketing</h1>
       <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -207,13 +192,8 @@
   
 </section>
 <!-- start section Website &amp; Apps -->
-<<<<<<< HEAD
 <section id="games">
   <div class="container graphic-design animate__animated" id="serv2" >
-=======
-<section>
-  <div class="container graphic-design " id="serv2" >
->>>>>>> 05b8aac5b83a618b64092d5096096d260ca7a513
     <div class="test">
       <h1>Games</h1>
       <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -424,7 +404,11 @@
               $(this).addClass('is-active').siblings().removeClass('is-active');
           });
     
-
+          window.addEventListener("scroll", function(){
+            var header = document.querySelector(".graphic-design");
+            // console.log(header);
+            header.classList.toggle("animate__backInDown", window.scrollY + 600);
+   });
   </script>
 
 </body>
