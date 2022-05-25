@@ -7,7 +7,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Technology Magic</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href=" ./assets/css/font-awesome.min.css">
   <link rel="stylesheet" href=" ./assets/css/bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -48,10 +47,10 @@
   <header>
       <a href="#" class="logo"><img src="./assets/images/logo.svg" width="100px" height="100px"></a>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></1i>
+        <li><a href="./portfolio.html">Portfolio</a></1i>
         <li><a href="#">Team</a></li>
         <li><a href="#">Contact</a></li>
       </ul>  
@@ -78,10 +77,10 @@
   </section>
 <!-- start section Graphic Design -->
   <section >
-    <div class="container graphic-design animate__animated" id="serv2">
-      <div>
+    <div class="container" id="serv2">
+      <div class="graphic-design">
         <h1>Graphic Design</h1>
-        <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
+        <video src="./assets/videos/motionGr.mp4" muted loop autoplay></video>
       </div>
       <div class="team-design">
         <h2>OUR TEAM</h2>
@@ -107,7 +106,7 @@
 
 <!-- start section Video Services -->
 <section id="video-services">
-  <div class="container graphic-design animate__animated" id="serv2">
+  <div class="container" id="serv2">
     <div>
       <h1>Video Services</h1>
       <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -133,7 +132,7 @@
 </section>
 <!-- start section Website &amp; Apps -->
 <section id="website">
-  <div class="container graphic-design animate__animated" id="serv2" >
+  <div class="container" id="serv2" >
     <div>
       <h1>Website &amp; Apps</h1>
       <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -163,7 +162,7 @@
 </section>
 <!-- start section Website &amp; Apps -->
 <section id="digital">
-  <div class="container graphic-design animate__animated" id="serv2" >
+  <div class="container" id="serv2" >
     <div>
       <h1>Digital Marketing</h1>
       <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
@@ -193,10 +192,10 @@
 </section>
 <!-- start section Website &amp; Apps -->
 <section id="games">
-  <div class="container graphic-design animate__animated" id="serv2" >
-    <div class="test">
+  <div class="container" id="serv2" >
+    <div class="graphic-design">
       <h1>Games</h1>
-      <video src="./assets/videos/ux_2.mp4" muted loop autoplay></video>
+      <video src="./assets/videos/games.mp4" muted loop autoplay></video>
     </div>
     <div class="team-design custem-team custem-team1">
       <h2>Games</h2>
@@ -382,9 +381,85 @@
 </section>
 
 <footer>
+  <article class="content-footer ">
+    <div class="img-logo-position">
+      <img src="./assets/images/ماجيك.png " alt="">
+    </div>
+    <article class="contenier-content-flex container">
+      <div class="logo-foter">
+        <img src="./assets/images/ماجيك-01 (1).png" alt="">
+      </div>
+      <div class="title-magec-footer">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+      </div>
+      <div class="compony-footer">
+        <h4>Compony</h4>
+        <ul>
+          <li>
+            <a href="">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="">
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="follow-us-footer">
+        <h4>Follow us</h4>
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              linkedin
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              instagram
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              Whatsapp
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="subscribe-footer">
+        <p>Subscribe to our newsletter and be the first to know about our updates.</p>
+        <form action="">
+          <div class="content-form-footer">
+            <input type="email" name="" id="" placeholder="Enter your email address" class="input-foorm">
+            <input type="button" value="Subscribe">
+          </div>
+        </form>
+      </div>
+    </article>
+  </article>
   <article>
     <div class="footer-content">
-      <h5>All copy right reserved to <span style="color: #d82533;">Technology Magic</span> &copy;	 2022</h5>
+      <h5>All copy right reserved to <span>Technology Magic</span> &copy;	 2022</h5>
     </div>
   </article>
 </footer>
@@ -404,11 +479,7 @@
               $(this).addClass('is-active').siblings().removeClass('is-active');
           });
     
-          window.addEventListener("scroll", function(){
-            var header = document.querySelector(".graphic-design");
-            // console.log(header);
-            header.classList.toggle("animate__backInDown", window.scrollY + 600);
-   });
+
   </script>
 
 </body>

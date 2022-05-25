@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  list-style-type: none;
+  /* list-style-type: none; */
   scroll-behavior: smooth;
   transition: all .43s ease-in-out;
 }
@@ -298,11 +298,11 @@ body{
 
 /* start graphic-design  */
 .graphic-design{
-  width: 70%;
+  width: 100%;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
-  height: 1050px;
+  /* height: 1050px; */
   /* border: 1px solid; */
 }
 .graphic-design video{
@@ -343,6 +343,7 @@ body{
   padding: 15px 0px 8px 8px;
   padding-left: 30px;
   border-top: .9px solid #ECE6E6;
+  list-style-type: none;
 }
 .team-design-services ul li i{
   color: #800000 !important;
@@ -531,14 +532,313 @@ body{
 .we-are .tap-abut{
   margin: 32px 15px;
 }
+
+/*==============*/
 /* start footer  */
+/*===============*/
+
 .footer-content{
   min-height: 60px;
-  background-color: #D2D2D2;
+  background-color: #4361EE;
   line-height: 60px;
-
+  
 }
 .footer-content h5{
   line-height: 60px;
   text-align: center;
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 16px;
+  margin: 0 55px;
+  border-top: 1px solid #D2D2D2;
+
+}
+
+.content-footer{
+  min-height: 320px;
+  background-color: #4361EE;
+  position: relative;
+  z-index: 1;
+}
+.img-logo-position{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+}
+.contenier-content-flex{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  height: 400px;
+}
+.title-magec-footer{
+  width: 40%;
+  padding-left: 50px;
+  color: #FFFFFF;
+}
+.compony-footer{
+  color: #FFFFFF;
+  width: 20%;
+}
+.compony-footer h4{
+  font-weight: 600;
+  padding-left: 29px;
+}
+.compony-footer ul li{
+  list-style-type: none;
+  padding: 8px 0;
+}
+.compony-footer ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+.follow-us-footer{
+  color: #FFFFFF;
+  width: 20%;
+
+}
+.follow-us-footer h4{
+  font-weight: 600;
+  padding-left: 29px;
+}
+.follow-us-footer ul li{
+  list-style-type: none;
+  padding: 8px 0;
+}
+.follow-us-footer ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.subscribe-footer{
+  width: 30%;
+  color: #FFFFFF;
+}
+.subscribe-footer p{
+  font-size: 14px;
+}
+.subscribe-footer .content-form-footer{
+  position: relative;
+
+}
+.subscribe-footer .content-form-footer input[type="button"]{
+  position: absolute;
+  right: 0;
+  width: 30%;
+  border: 0;
+  border-radius: 0px 5px 5px 0px;
+  padding: 8px;
+  height: 50px;
+  background-color: #F72585;
+  color: #FFFFFF;
+}
+
+.subscribe-footer .content-form-footer input[type="email"]{
+  position: absolute;
+  left: 0;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0 0px 5px;
+  padding: 8px;
+  height: 50px;
+}
+
+
+
+
+/* start page profel  */
+
+.overlay-img {
+  position: relative;
+  min-width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(190deg,
+      rgba(0, 0, 0, 0.30),
+      rgba(0, 0, 0, 0.30),
+      rgba(0, 0, 0, 0.30));
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -999;
+}
+.our-portfolio{
+  color: #FFFFFF;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.our-portfolio h1{
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.our-portfolio p{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+.img-Portfolio{
+  width: 33%;
+  height: 357px;
+  overflow: hidden;
+}
+.img-Portfolio img{
+  transition: all .54s ease-out;
+  width: 100%;
+  height: 100%;
+}
+.img-Portfolio img:hover{
+  transform: scale(1.1);
+  /* transform: rotate(1deg); */
+    cursor: pointer;
+}
+.content-Portfolio-img{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.our-portfolio-body{
+  background-color: #FFFFFF;
+}
+.successful-project{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.successful-project h2{
+  font-weight: 600;
+  font-size: 27px;
+  text-align: center;
+}
+.successful-project a{
+  text-decoration: none;
+  padding: 5px 30px;
+  margin: 8px 0;
+  border: .9px solid #4361EE;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* start page app discription  */
+
+.content-app{
+  background-color: #d2d2d2;
+  min-height: 400px;
+}
+.content-app-description{
+  display: flex;
+  justify-content: space-between;
+}
+.content-app-description article{
+  margin-top: 15px;
+}
+.content-app-description article:last-child{
+  width: 40%;
+  
+}
+.content-app-description article:first-child{
+  width: 50%;
+}
+.cont-description h2{
+  padding: 15px 0;
+  font-size: 22px;
+}
+.cont-description p{
+  font-size: 14px;
+}
+.cont-description p:last-child{
+  padding: 50px 0;
+}
+.client-cont-description div{
+  padding: 15px 0;
+  border-bottom: 1px solid #5A5A5A;
+}
+.client-cont-description div p{
+  font-weight: 100;
+}
+.client-cont-description div:last-child{
+  margin-bottom: 20px;
+}
+
+.img-app-featured{
+  width: 580px;
+  height: 510px;
+}
+.img-app-featured img{
+  width: 580px;
+  height: 100%;
+}
+.content-app-featured article{
+  margin-top: 80px;
+  width: 50%;
+}
+.content-app-featured{
+  display: flex;
+}
+.cont-app-featured{
+  padding: 0 20px;
+}
+.cont-app-featured h4{
+  padding: 0 15px;
+}
+.cont-app-featured p{
+  padding: 0 15px;
+}
+.cont-app-featured ol li{
+  line-height: 30px;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 408px;
+  height: 761px;
+  object-fit: cover;
 }
