@@ -555,7 +555,7 @@ body{
 }
 
 .content-footer{
-  min-height: 320px;
+  height: 300px;
   background-color: #4361EE;
   position: relative;
   z-index: 1;
@@ -571,8 +571,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 100px;
-  height: 400px;
+  padding-top: 50px;
+  /* height: 400px; */
 }
 .title-magec-footer{
   width: 40%;
